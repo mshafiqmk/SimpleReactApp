@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import HelloMessage from './Components/HelloMessage';
+import Timer from './Components/Timer';
+import TodoList from './Components/Todo';
 
+import "bootstrap/dist/css/bootstrap.min.css";
 class App extends Component {
   render() {
     return (
@@ -20,6 +24,9 @@ class App extends Component {
             Learn React
           </a>
         </header>
+        <HelloMessage name="shafiq" />
+        <Timer />
+        <TodoList />
       </div>
     );
   }
