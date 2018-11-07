@@ -40,10 +40,10 @@ class Timer extends Component {
 
     render() {
     return (
-      <div>
-        Seconds: {this.state.seconds}  <br></br>
-        Minutes : {this.state.minutes} <br></br>
-        Hours : {this.state.hrs} <br></br>
+      <div className="container" style={{"border-radius":"10px" , "border":"1px solid red","background":""} }>
+        <span className="badge badage-primary"> Hours : {this.state.hrs}  <br></br></span>
+        <span className="badge badage-primary"> Minutes : {this.state.minutes}  <br></br></span>
+        <span className="badge badage-primary"> Seconds: {this.state.seconds}  <br></br></span>
       </div>
     );
   }
